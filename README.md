@@ -30,8 +30,8 @@ Terra comum > GND
 Instalação (Requisitos: Python 3.12, Arduino compatível e webcam):
 
 1. Clone o repositório e acesse a pasta:
-git clone URL_DO_REPOSITORIO
-cd handsync
+git clone https://github.com/printgustavonasc/Digitum.git
+cd digitum
 
 2. Crie e ative um ambiente virtual:
 python3 -m venv .venv
@@ -44,7 +44,7 @@ python -m pip install -r requirements.txt
 arduino/controle_cinco_leds/controle_cinco_leds.ino
 
 5. Configure no programa Python a porta serial correspondente ao Arduino e execute:
-python handsync_cvzone.py
+python digitum.py
 
 Pressione Q para encerrar.
 (obs para Linux, dependendo das permissões do dispositivo, pode ser necessário adicionar o usuário ao grupo dialout e iniciar uma nova sessão.)
@@ -56,7 +56,7 @@ Testes manuais do reconhecimento dos dedos de 0 a 5, comunicação serial, respo
 O reconhecimento pode apresentar imprecisões dependendo da orientação da mão, da posição do polegar e das condições de captura da webcam. O algoritmo utiliza regras geométricas para melhorar a classificação do polegar, mas não garante reconhecimento perfeito em todas as situações.
 
 [Estrutura do projeto]
-handsync_cvzone.py: aplicação principal.
+digitum.py: aplicação principal.
 arduino/: sketch utilizado no protótipo.
 experiments/: experimentos e versões anteriores.
 docs/: documentação técnica, testes e resultados.

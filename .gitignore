@@ -28,3 +28,4 @@ Thumbs.db
 # Modelos experimentais do MediaPipe
 hand_landmarker.task
 models/*.task
+.venv-antigo/

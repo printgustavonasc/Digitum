@@ -46,7 +46,7 @@ def contar_dedos(mao):
     return dedos.count(1)
 
 def main():
-    print("HandSync - CVZone + Arduino")
+    print("Digitum - CVZone + Arduino")
 
     arduino = serial.Serial(PORTA, BAUDRATE, timeout=1)
     camera = None
@@ -105,7 +105,7 @@ def main():
                 3,
             )
 
-            cv2.imshow("HandSync - Arduino", frame)
+            cv2.imshow("Digitum - Arduino", frame)
 
             if cv2.waitKey(1) & 0xFF == ord("q"):
                 break
@@ -121,7 +121,7 @@ def main():
 
         cv2.destroyAllWindows()
         arduino.close()
-        print("HandSync encerrado.")
+        print("Digitum encerrado.")
 
 if __name__ == "__main__":
     main()
