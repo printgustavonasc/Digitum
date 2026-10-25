@@ -1,0 +1,30 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Configuracoes locais
+.env
+.env.*
+!.env.example
+
+# Arquivos temporarios
+*.log
+*.save
+*.swp
+*~
+
+# Ferramentas instaladas localmente
+bin/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Modelos experimentais do MediaPipe
+hand_landmarker.task
+models/*.task
